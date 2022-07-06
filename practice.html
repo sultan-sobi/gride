@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: blue;
+        height: 100vh;
+        display: grid;
+        height: min-content auto min-content;
+        grid-template-areas: 
+        'h'
+        'm'
+        'm'
+        'm'
+        'f';
+       } 
+       header{font-size: 2rem;
+        text-align: center;
+         grid-area:h;
+         background-color: blueviolet;
+       }
+       main{
+         grid-area: m;
+         background-color: brown;
+       }
+       article{
+        
+        height: 100%;
+                display: grid;
+                grid-template-areas: 
+              's1 a1'
+              's2 a2'
+              's3 .'
+                    ;
+       }
+       
+
+       #sec1{grid-area: s1;background-color: green;font-size: 25px;text-align: center;}
+       #sec2{grid-area: s2;background-color: rgb(0, 19, 128);font-size: 25px;text-align: center;}
+       #sec3{grid-area: s3;background-color: rgb(128, 62, 0);font-size: 25px;text-align: center;}
+       #aside1{grid-area: a1;background-color: rgb(0, 55, 128);font-size: 25px;text-align: center;}
+       #aside2{grid-area: a2;background-color: rgb(173, 204, 173);font-size: 25px;text-align: center;}
+       #nav1{grid-area: n1;background-color: rgb(128, 0, 100);font-size: 25px;text-align: center;}
+       #nav2{grid-area:n2;background-color: rgb(13, 236, 13);font-size: 25px;text-align: center;}
+       footer{
+        display: grid;
+        grid-template-areas: 
+        'n1 n2';
+            background-color: rgb(35, 248, 177);
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>nav</nav>
+    </header>
+    <main>
+        <article>
+            <section id="sec1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore reiciendis rerum, voluptates esse illo fuga, maxime inventore molestiae voluptatem corrupti consectetur delectus nesciunt perferendis iste corporis. Veritatis, molestias. Eius deleniti est natus enim? Adipisci perspiciatis provident nostrum. Facilis aspernatur fugiat eius dolor? Accusamus aut est vel ullam dolore aperiam
+                 voluptatum.</section>
+            <section id="sec2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eius totam at aspernatur, iste voluptatum nesciunt recusandae. Beatae eligendi optio vero possimus adipisci illum asperiores eveniet vitae accusantium alias nesciunt quod, velit quam est, assumenda exercitationem! Molestiae inventore excepturi, culpa reiciendis voluptate itaque beatae neque hic, deleniti, quasi minus
+                 dolor?</section>
+            <section id="sec3">section3</section>
+              
+             <aside id="aside1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos error atque assumenda delectus magnam eius obcaecati debitis facilis beatae neque.</aside>
+             <aside id="aside2">aside2</aside>
+        </article>
+    </main>
+    <footer>
+        <nav id="nav1">nav1</nav>
+        <nav id="nav2">nav2</nav>
+    </footer>
+</body>
+</html>
